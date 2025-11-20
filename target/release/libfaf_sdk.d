@@ -1,0 +1,1 @@
+/Users/wolfejam/FAF/faf-rust-sdk/target/release/libfaf_sdk.rlib: /Users/wolfejam/FAF/faf-rust-sdk/src/compress.rs /Users/wolfejam/FAF/faf-rust-sdk/src/lib.rs /Users/wolfejam/FAF/faf-rust-sdk/src/parser.rs /Users/wolfejam/FAF/faf-rust-sdk/src/types.rs /Users/wolfejam/FAF/faf-rust-sdk/src/validator.rs
