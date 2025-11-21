@@ -22,11 +22,13 @@ mod parser;
 mod types;
 mod validator;
 mod compress;
+mod discovery;
 
 pub use parser::{parse, parse_file, stringify, FafFile, FafError};
 pub use types::*;
 pub use validator::{validate, ValidationResult};
 pub use compress::{compress, estimate_tokens, CompressionLevel};
+pub use discovery::{find_faf_file, find_and_parse, FindError};
 
 /// Library version
 pub const VERSION: &str = env!("CARGO_PKG_VERSION");
