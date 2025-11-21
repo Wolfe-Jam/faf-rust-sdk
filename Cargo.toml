@@ -11,6 +11,7 @@ documentation = "https://docs.rs/faf-sdk"
 readme = "README.md"
 keywords = ["faf", "ai-context", "yaml", "llm", "grok"]
 categories = ["parsing", "data-structures"]
+exclude = ["target/", ".git/", "*.lock"]
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
