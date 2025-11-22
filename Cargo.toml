@@ -1,5 +1,5 @@
 [package]
-name = "faf-sdk"
+name = "faf-rust-sdk"
 version = "1.0.0"
 edition = "2021"
 authors = ["wolfejam <wolfejam@faf.one>"]
@@ -7,7 +7,7 @@ description = "Rust SDK for FAF (Foundational AI-context Format) - IANA-register
 license = "MIT"
 repository = "https://github.com/Wolfe-Jam/faf-rust-sdk"
 homepage = "https://faf.one"
-documentation = "https://docs.rs/faf-sdk"
+documentation = "https://docs.rs/faf-rust-sdk"
 readme = "README.md"
 keywords = ["faf", "ai-context", "yaml", "llm", "grok"]
 categories = ["parsing", "data-structures"]
