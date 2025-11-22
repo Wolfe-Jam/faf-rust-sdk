@@ -17,7 +17,7 @@ const FAF_FILES: &[&str] = &["project.faf", ".faf"];
 /// # Example
 ///
 /// ```rust,no_run
-/// use faf_sdk::find_faf_file;
+/// use faf_rust_sdk::find_faf_file;
 /// use std::path::PathBuf;
 ///
 /// // Search from current directory
@@ -68,7 +68,7 @@ pub fn find_faf_file<P: AsRef<Path>>(start_dir: Option<P>) -> Option<PathBuf> {
 /// # Example
 ///
 /// ```rust,no_run
-/// use faf_sdk::find_and_parse;
+/// use faf_rust_sdk::find_and_parse;
 /// use std::path::PathBuf;
 ///
 /// match find_and_parse::<PathBuf>(None) {

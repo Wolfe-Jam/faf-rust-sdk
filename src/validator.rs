@@ -20,7 +20,7 @@ pub struct ValidationResult {
 /// # Example
 ///
 /// ```rust
-/// use faf_sdk::{parse, validate};
+/// use faf_rust_sdk::{parse, validate};
 ///
 /// let content = r#"
 /// faf_version: 2.5.0

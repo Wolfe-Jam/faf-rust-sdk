@@ -5,7 +5,7 @@
 //! # Example
 //!
 //! ```rust
-//! use faf_sdk::{parse, FafFile};
+//! use faf_rust_sdk::{parse, FafFile};
 //!
 //! let content = r#"
 //! faf_version: 2.5.0

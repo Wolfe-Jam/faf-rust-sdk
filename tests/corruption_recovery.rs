@@ -3,7 +3,7 @@
 //! Demonstrates FAF's resilience to file corruption and self-healing capabilities.
 //! Key showcase for xAI integration testing.
 
-use faf_sdk::{parse, validate, find_and_parse};
+use faf_rust_sdk::{parse, validate, find_and_parse};
 use std::fs;
 use tempfile::TempDir;
 

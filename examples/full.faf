@@ -1,0 +1,69 @@
+faf_version: 2.5.0
+ai_score: "85%"
+ai_confidence: "high"
+
+project:
+  name: full-example
+  goal: Complete FAF file with all fields
+  main_language: TypeScript
+  version: 1.0.0
+  license: MIT
+
+instant_context:
+  what_building: Example application
+  tech_stack: Node.js, TypeScript, React
+  deployment: Vercel
+  key_files:
+    - src/index.ts
+    - src/app.tsx
+    - package.json
+  commands:
+    dev: npm run dev
+    build: npm run build
+    test: npm test
+    lint: npm run lint
+
+stack:
+  frontend: React 18
+  backend: Node.js
+  database: PostgreSQL
+  infrastructure: Vercel
+  build_tool: Vite
+  testing: Jest
+  cicd: GitHub Actions
+
+context_quality:
+  slots_filled: "22/24"
+  confidence: "high"
+  handoff_ready: true
+  missing_context:
+    - API documentation
+
+human_context:
+  who: Development team
+  what: Full-featured web application
+  why: Demonstrate all FAF capabilities
+  how: Modern TypeScript stack
+  where: Cloud deployment
+  when: Q4 2025
+
+preferences:
+  quality_bar: high
+  testing: comprehensive
+  documentation: required
+  code_style: strict
+
+state:
+  phase: development
+  version: 0.1.0
+  focus: Core features
+  milestones:
+    - MVP launch
+    - Beta testing
+    - Production release
+
+tags:
+  - typescript
+  - react
+  - full-stack
+  - example

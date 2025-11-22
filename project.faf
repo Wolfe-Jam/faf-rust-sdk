@@ -1,0 +1,57 @@
+faf_version: 2.5.0
+ai_score: "92%"
+project:
+  name: faf-rust-sdk
+  goal: High-performance Rust SDK for FAF format parsing and validation
+  main_language: Rust
+  version: 1.0.1
+  license: MIT
+
+instant_context:
+  what_building: Rust SDK for FAF (Foundational AI-context Format)
+  tech_stack: Rust 2021, serde, serde_yaml
+  deployment: crates.io
+  key_files:
+    - src/lib.rs
+    - src/parser.rs
+    - src/types.rs
+    - src/validator.rs
+    - src/compress.rs
+    - src/discovery.rs
+  commands:
+    test: cargo test
+    build: cargo build --release
+    publish: cargo publish
+    doc: cargo doc --open
+
+stack:
+  backend: Rust 2021 Edition
+  build_tool: Cargo
+  testing: cargo test + criterion benchmarks
+
+context_quality:
+  slots_filled: "18/24"
+  confidence: "high"
+  handoff_ready: true
+
+human_context:
+  who: wolfejam
+  what: Rust SDK for AI context format
+  why: Zero-copy parsing optimized for inference workloads
+  how: serde YAML parsing with custom validation
+  where: crates.io, GitHub
+  when: November 2025
+
+state:
+  phase: production
+  version: 1.0.1
+  focus: Binary format spec (.fafb)
+
+tags:
+  - rust
+  - sdk
+  - ai-context
+  - yaml
+  - mcp
+  - grok
+  - iana-registered

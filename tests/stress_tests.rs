@@ -1,7 +1,7 @@
 //! Stress tests for FAF Rust SDK
 //! F1 Philosophy: When brakes must work flawlessly, so must our code.
 
-use faf_sdk::{parse, validate, compress, CompressionLevel};
+use faf_rust_sdk::{parse, validate, compress, CompressionLevel};
 
 // =============================================================================
 // SCORE PARSING EDGE CASES
