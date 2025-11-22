@@ -1,0 +1,23 @@
+[package]
+name = "faf-sdk"
+version = "1.0.0"
+edition = "2021"
+authors = ["wolfejam <wolfejam@faf.one>"]
+description = "Rust SDK for FAF (Foundational AI-context Format) - IANA-registered application/vnd.faf+yaml"
+license = "MIT"
+repository = "https://github.com/Wolfe-Jam/faf-rust-sdk"
+homepage = "https://faf.one"
+documentation = "https://docs.rs/faf-sdk"
+readme = "README.md"
+keywords = ["faf", "ai-context", "yaml", "llm", "grok"]
+categories = ["parsing", "data-structures"]
+exclude = ["target/", ".git/", "*.lock"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+thiserror = "1.0"
+
+[dev-dependencies]
+criterion = "0.5"
+tempfile = "3.10"
