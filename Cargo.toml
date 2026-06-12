@@ -1,7 +1,8 @@
 [package]
 name = "faf-rust-sdk"
 version = "2.0.1"
-edition = "2021"
+edition = "2024"
+rust-version = "1.85"
 authors = ["wolfejam <wolfejam@faf.one>"]
 description = "Persistent Project Context for Rust. IANA-registered .faf format, parse, validate, score, FAFb binary."
 license = "MIT"

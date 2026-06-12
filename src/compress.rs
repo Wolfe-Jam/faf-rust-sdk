@@ -138,12 +138,14 @@ human_context:
         let compressed = compress(&faf, CompressionLevel::Minimal);
 
         assert_eq!(compressed.project.name, "test");
-        assert!(compressed
-            .instant_context
-            .as_ref()
-            .unwrap()
-            .tech_stack
-            .is_some());
+        assert!(
+            compressed
+                .instant_context
+                .as_ref()
+                .unwrap()
+                .tech_stack
+                .is_some()
+        );
         assert!(compressed.stack.is_none());
         assert!(compressed.human_context.is_none());
     }

@@ -21,15 +21,15 @@ use std::task::{Context, Poll};
 
 use ::axum::extract::FromRequestParts;
 use ::axum::response::IntoResponse;
-use ::http::request::Parts;
 use ::http::StatusCode;
+use ::http::request::Parts;
 use ::tower::{Layer, Service};
 
-use crate::compress::{compress, CompressionLevel};
-use crate::discovery::{find_and_parse, FindError};
+use crate::compress::{CompressionLevel, compress};
+use crate::discovery::{FindError, find_and_parse};
 use crate::parser::FafFile;
 use crate::types::FafData;
-use crate::validator::{validate, ValidationResult};
+use crate::validator::{ValidationResult, validate};
 
 // ---------------------------------------------------------------------------
 // FafContext — the extractor

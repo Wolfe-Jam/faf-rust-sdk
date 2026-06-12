@@ -29,11 +29,11 @@ mod validator;
 pub mod axum;
 
 pub use binary::{FafbError, FafbHeader, Flags, Priority, SectionEntry, SectionTable, SectionType};
-pub use compress::{compress, estimate_tokens, CompressionLevel};
-pub use discovery::{find_and_parse, find_faf_file, FindError};
-pub use parser::{parse, parse_file, stringify, FafError, FafFile};
+pub use compress::{CompressionLevel, compress, estimate_tokens};
+pub use discovery::{FindError, find_and_parse, find_faf_file};
+pub use parser::{FafError, FafFile, parse, parse_file, stringify};
 pub use types::*;
-pub use validator::{validate, ValidationResult};
+pub use validator::{ValidationResult, validate};
 
 /// Library version
 pub const VERSION: &str = env!("CARGO_PKG_VERSION");

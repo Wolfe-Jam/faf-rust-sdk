@@ -4,8 +4,8 @@
 //! The engine that drives everything.
 
 use faf_rust_sdk::{
-    compress, estimate_tokens, find_and_parse, find_faf_file, parse, stringify, validate,
-    CompressionLevel,
+    CompressionLevel, compress, estimate_tokens, find_and_parse, find_faf_file, parse, stringify,
+    validate,
 };
 use std::fs;
 use tempfile::TempDir;
@@ -199,12 +199,14 @@ human_context:
     let compressed = compress(&faf, CompressionLevel::Minimal);
 
     assert_eq!(compressed.project.name, "test");
-    assert!(compressed
-        .instant_context
-        .as_ref()
-        .unwrap()
-        .tech_stack
-        .is_some());
+    assert!(
+        compressed
+            .instant_context
+            .as_ref()
+            .unwrap()
+            .tech_stack
+            .is_some()
+    );
     assert!(compressed.stack.is_none());
     assert!(compressed.human_context.is_none());
 }

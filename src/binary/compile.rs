@@ -6,12 +6,12 @@
 use std::io::Write;
 
 use super::chunk_registry::{
-    classify_key, default_priority_for_classification, ChunkClassification,
+    ChunkClassification, classify_key, default_priority_for_classification,
 };
 use super::error::{FafbError, FafbResult};
 use super::header::{FafbHeader, HEADER_SIZE, MAX_FILE_SIZE, MAX_SECTIONS};
 use super::priority::Priority;
-use super::section::{SectionEntry, SectionTable, SECTION_ENTRY_SIZE};
+use super::section::{SECTION_ENTRY_SIZE, SectionEntry, SectionTable};
 use super::section_type::SectionType;
 use super::string_table::StringTable;
 

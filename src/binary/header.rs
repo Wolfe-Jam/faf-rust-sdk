@@ -24,7 +24,7 @@ use byteorder::{LittleEndian, ReadBytesExt, WriteBytesExt};
 use std::io::{Cursor, Read, Write};
 
 use super::error::{FafbError, FafbResult};
-use super::flags::{Flags, FLAG_STRING_TABLE};
+use super::flags::{FLAG_STRING_TABLE, Flags};
 
 /// Magic number identifying FAFB files: "FAFB" in ASCII
 pub const MAGIC: [u8; 4] = *b"FAFB";

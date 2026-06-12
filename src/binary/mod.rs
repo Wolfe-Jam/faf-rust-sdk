@@ -37,25 +37,25 @@ pub mod string_table;
 
 // Re-exports for convenience
 pub use chunk_registry::{
-    classify_key, ChunkClassification, CLASSIFICATION_MASK, DNA_KEYS, POINTER_KEY,
+    CLASSIFICATION_MASK, ChunkClassification, DNA_KEYS, POINTER_KEY, classify_key,
 };
-pub use compile::{compile, decompile, CompileOptions, DecompiledFafb};
+pub use compile::{CompileOptions, DecompiledFafb, compile, decompile};
 pub use error::{FafbError, FafbResult};
 pub use flags::{
-    Flags, FLAG_COMPRESSED, FLAG_EMBEDDINGS, FLAG_MODEL_HINTS, FLAG_RESOLVED, FLAG_SIGNED,
-    FLAG_STRING_TABLE, FLAG_TOKENIZED, FLAG_WEIGHTED,
+    FLAG_COMPRESSED, FLAG_EMBEDDINGS, FLAG_MODEL_HINTS, FLAG_RESOLVED, FLAG_SIGNED,
+    FLAG_STRING_TABLE, FLAG_TOKENIZED, FLAG_WEIGHTED, Flags,
 };
 pub use header::{
     FafbHeader, HEADER_SIZE, MAGIC, MAGIC_U32, MAX_FILE_SIZE, MAX_SECTIONS, VERSION_MAJOR,
     VERSION_MINOR,
 };
 pub use priority::{
-    Priority, PRIORITY_CRITICAL, PRIORITY_HIGH, PRIORITY_LOW, PRIORITY_MEDIUM, PRIORITY_OPTIONAL,
+    PRIORITY_CRITICAL, PRIORITY_HIGH, PRIORITY_LOW, PRIORITY_MEDIUM, PRIORITY_OPTIONAL, Priority,
 };
-pub use section::{SectionEntry, SectionTable, SECTION_ENTRY_SIZE};
+pub use section::{SECTION_ENTRY_SIZE, SectionEntry, SectionTable};
 pub use section_type::{
-    SectionType, SECTION_ARCHITECTURE, SECTION_BISYNC, SECTION_COMMANDS, SECTION_CONTEXT,
-    SECTION_CUSTOM, SECTION_EMBEDDINGS, SECTION_KEY_FILES, SECTION_META, SECTION_MODEL_HINTS,
-    SECTION_TECH_STACK, SECTION_TOKEN_MAP,
+    SECTION_ARCHITECTURE, SECTION_BISYNC, SECTION_COMMANDS, SECTION_CONTEXT, SECTION_CUSTOM,
+    SECTION_EMBEDDINGS, SECTION_KEY_FILES, SECTION_META, SECTION_MODEL_HINTS, SECTION_TECH_STACK,
+    SECTION_TOKEN_MAP, SectionType,
 };
 pub use string_table::StringTable;

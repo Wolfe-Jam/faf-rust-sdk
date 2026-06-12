@@ -2,6 +2,16 @@
 
 All notable changes to faf-rust-sdk will be documented in this file.
 
+## [Unreleased]
+
+### Added
+- Trusted Publishing (OIDC) workflow for crates.io releases (`publish-crate.yml`)
+- Weekly cargo-audit security CI (`audit.yml`)
+
+### Changed
+- Rust edition 2021 → 2024
+- Declared MSRV: `rust-version = "1.85"`
+
 ## [2.0.1] - 2026-03-20
 
 ### Added

@@ -21,7 +21,7 @@
 use byteorder::{LittleEndian, ReadBytesExt, WriteBytesExt};
 use std::io::{Read, Write};
 
-use super::chunk_registry::{ChunkClassification, CLASSIFICATION_MASK};
+use super::chunk_registry::{CLASSIFICATION_MASK, ChunkClassification};
 use super::error::{FafbError, FafbResult};
 use super::priority::Priority;
 use super::section_type::SectionType;
@@ -483,9 +483,11 @@ mod tests {
         assert_eq!(within_budget.len(), 2);
 
         // Meta should always be included (critical)
-        assert!(within_budget
-            .iter()
-            .any(|e| e.section_type == SectionType::Meta));
+        assert!(
+            within_budget
+                .iter()
+                .any(|e| e.section_type == SectionType::Meta)
+        );
     }
 
     #[test]

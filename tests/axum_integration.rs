@@ -6,15 +6,15 @@
 
 use std::fs;
 
+use axum::Router;
 use axum::body::Body;
 use axum::routing::get;
-use axum::Router;
 use http::Request;
 use tempfile::TempDir;
 use tower::ServiceExt;
 
 use faf_rust_sdk::axum::{FafContext, FafLayer};
-use faf_rust_sdk::{parse, CompressionLevel};
+use faf_rust_sdk::{CompressionLevel, parse};
 
 const SAMPLE_FAF: &str = r#"
 faf_version: 2.5.0
