@@ -1,4 +1,15 @@
-# faf-rust-sdk v2
+# faf-rust-sdk (historical tree)
+
+> **Publish source of truth has moved.**  
+> Live crates.io **`faf-rust-sdk` 3.x** is the facade over `faf-kernel` + `faf-fafb`, developed and released from:  
+> **[github.com/Wolfe-Jam/faf-rust](https://github.com/Wolfe-Jam/faf-rust)** · map: [CRATE-SUPERSESSION.md](https://github.com/Wolfe-Jam/faf-rust/blob/main/docs/CRATE-SUPERSESSION.md)  
+>  
+> This repository is a **historical monorepo** (v2-era in-tree SDK). Do **not** publish from here.  
+> Install: `faf-rust-sdk = "3"` · Owner: FAF format steward (namespace reserved intentionally).
+
+---
+
+# faf-rust-sdk v2 (archive readme)
 
 **Persistent Project Context for Rust. Parse, validate, score, FAFb (binary).**
 
